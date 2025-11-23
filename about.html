@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Edward Benedict P. Castro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        nav {
+            background: white;
+            padding: 1.5rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav ul li:first-child {
+            font-weight: bold;
+            margin-right: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2c7a7b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2d3748;
+            border-bottom: 3px solid #2c7a7b;
+            padding-bottom: 1rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+            margin-bottom: 3rem;
+        }
+
+        .about-text {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .about-text h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2c7a7b;
+        }
+
+        .about-text p {
+            color: #4a5568;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .about-image {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        
+        .image-placeholder img {
+    /* Makes the image fill the entire container */
+    width: 100%;
+    height: 100%;
+    /* Ensures the image covers the area completely, cropping as necessary */
+    object-fit: cover; 
+}
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #2c7a7b;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #285e61;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #2c7a7b;
+            border: 2px solid #2c7a7b;
+        }
+
+        .btn-secondary:hover {
+            background: #f7fafc;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">PORTFOLIO</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>ABOUT</h1>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h2>NAME AND BACKGROUND</h2>
+                <p>
+                    Hello! I'm Edward Benedict P. Castro, a passionate student 
+                    currently pursuing my Bachelor of Science in Information Technology (BSIT) 
+                    at CEEL 301 under the guidance of Prof. Laurice Mariquina.
+                </p>
+                <p>
+                    I am dedicated to learning and mastering various aspects of 
+                    computer technology, from web development to software engineering. 
+                    My journey in technology has been driven by curiosity and a desire 
+                    to create meaningful solutions.
+                </p>
+                <p>
+                    Through continuous learning and hands-on projects, I strive to 
+                    develop both my technical skills and problem-solving abilities. 
+                    This portfolio represents my growth and commitment to excellence 
+                    in the field of technology.
+                </p>
+                <p>
+                    I believe in the power of technology to transform lives and 
+                    am excited to contribute to innovative projects that make a 
+                    positive impact on society.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <div class="image-placeholder">
+                        <img src="images/about.jpg" alt="About of Edward Benedict P. Castro">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <a href="contact.html" class="btn btn-primary">VIEW MORE</a>
+            <a href="projects.html" class="btn btn-secondary">BACK</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Edward Benedict P. Castro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        nav {
+            background: white;
+            padding: 1.5rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav ul li:first-child {
+            font-weight: bold;
+            margin-right: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2c7a7b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2d3748;
+            border-bottom: 3px solid #2c7a7b;
+            padding-bottom: 1rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .project-image img {
+    /* Makes the image take up the full width and height of its parent div (200px) */
+    width: 100%; 
+    height: 100%;
+    
+    /* Ensures the image covers the container without being stretched. */
+    object-fit: cover; 
+}
+        .project-card:nth-child(3) .project-image {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .project-content p {
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #2c7a7b;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #285e61;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #2c7a7b;
+            border: 2px solid #2c7a7b;
+        }
+
+        .btn-secondary:hover {
+            background: #f7fafc;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">PORTFOLIO</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>PROJECTS</h1>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                <img src="images/sample1.jpg" alt="Screenshot of the Portfolio Website project">
+                </div>
+                <div class="project-content">
+                    <h2>Graphic Design Marketing</h2>
+                    <p>Strategic creation of visual assets for digital campaigns.</p>
+                    <p>This project highlights my ability to design targeted marketing collateral,</p>
+                    <p>including social media graphics and promotional banners,</p>
+                    <p>specifically engineered to drive engagement, increase brand awareness,</p>
+                    <p>and support marketing funnels.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                <img src="images/sample2.jpg" alt="Screenshot of the Portfolio Website project">
+            </div>
+                <div class="project-content">
+                    <h2>Digital Brand Poster</h2>
+                    <p>Visual identity reinforcement and impactful communication.</p>
+                    <p>This section features high-resolution digital posters</p>
+                    <p>developed to capture audience attention. Projects demonstrate expertise</p>
+                    <p>in typography, color theory, and composition to create cohesive,</p>
+                    <p>memorable visuals that define a strong digital brand identity.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                <img src="images/sample3.jpg" alt="Screenshot of the Portfolio Website project"></div>
+                <div class="project-content">
+                    <h2>Web Design</h2>
+                    <p>Building modern, user-centric, and fully responsive digital interfaces.</p>
+                    <p>This project demonstrates proficiency in front-end development (HTML/CSS)</p>
+                    <p>o create functional, aesthetically pleasing websites.</p>
+                    <p>The goal was to translate complex requirements into clean, intuitive web layouts</p>
+                    <p>that ensure a seamless user experience across all devices.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <a href="about.html" class="btn btn-primary">CONTINUE</a>
+            <a href="skills.html" class="btn btn-secondary">BACK</a>
+        </div>
+    </div>
+</body>
+</html>

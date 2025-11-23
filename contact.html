@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Edward Benedict P. Castro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        nav {
+            background: white;
+            padding: 1.5rem 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav ul li:first-child {
+            font-weight: bold;
+            margin-right: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #2c7a7b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 5%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2d3748;
+            border-bottom: 3px solid #2c7a7b;
+            padding-bottom: 1rem;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .contact-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+        }
+
+        .contact-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c7a7b;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            background: #f7fafc;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .contact-item:hover {
+            background: #e6f7f7;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #2c7a7b;
+            min-width: 30px;
+        }
+
+        .contact-details {
+            flex: 1;
+        }
+
+        .contact-details strong {
+            display: block;
+            color: #2d3748;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-details span {
+            color: #4a5568;
+            font-size: 0.95rem;
+        }
+
+        .contact-details a {
+            color: #2c7a7b;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-details a:hover {
+            color: #285e61;
+            text-decoration: underline;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+
+        .btn-primary {
+            background: #2c7a7b;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #285e61;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #2c7a7b;
+            border: 2px solid #2c7a7b;
+        }
+
+        .btn-secondary:hover {
+            background: #f7fafc;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">PORTFOLIO</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="skills.html">SKILLS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>CONTACT</h1>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <h2>EMAIL</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <strong>Primary Email</strong>
+                            <span><a href="mailto:edwardbenedict28@gmail.com">edward.castro@example.com</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <strong>School Email</strong>
+                            <span><a href="mailto:edwardbenedictcastro@ccc.edu.ph">ecastro@student.edu</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <strong>Professional</strong>
+                            <span><a href="mailto:contact@edwardcastro.dev">contact@edwardcastro.dev</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h2>PHONE</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <strong>Mobile</strong>
+                            <span>+63 999 968 7140</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">☎️</div>
+                        <div class="contact-details">
+                            <strong>Telephone</strong>
+                            <span>+63 999 968 7140</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <strong>WhatsApp</strong>
+                            <span>+63 999 968 7140</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h2>LINKEDIN</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <strong>LinkedIn Profile</strong>
+                            <span><a href="https://linkedin.com/in/edwardcastro" target="_blank">linkedin.com/in/edwardcastro</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <strong>GitHub</strong>
+                            <span><a href="https://github.com/edwardcastro" target="_blank">github.com/edwardcastro</a></span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <strong>Portfolio Website</strong>
+                            <span><a href="https://edwardcastro.dev" target="_blank">edwardcastro.dev</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <a href="index.html" class="btn btn-primary">SUBMIT</a>
+            <a href="about.html" class="btn btn-secondary">BACK</a>
+        </div>
+    </div>
+</body>
+</html>
